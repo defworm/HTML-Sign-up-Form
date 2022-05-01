@@ -28,12 +28,13 @@
                 </legend>
                 <label for="email">Your Email</label>
                 <input type="text" id="email" name="email"/>
-                <label for="street">Your Street Address</label>
-                <input type="text" id="street" name="street"/>
+                <label for="address">Your Street Address</label>
+                <input type="text" id="address" name="address"/>
                 <label for="city">Your City</label>
                 <input type="text" id="city" name="city"/>
                 <label for="state">Select Your State</label>
-                <select name="states" id="states">
+                <select name="state" id="state">
+                    
                 
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -86,8 +87,10 @@
                         <option value="WY">Wyoming</option>
                     
                 </select>
+                <div>
                 <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="zip" pattern="(0-9) {5}">
+                <input type="text" id="zip" name="zip">
+            </div>
                 
 
             </fieldset>
@@ -100,10 +103,31 @@
             <!-- TODO: Color input for selecting favorite color -->
             <!-- TODO: Checkboxes for selecting extra add-ons -->
             <fieldset>
-                
+                <legend>Your Preferences</legend>
+                <h3>Choose Your Destination!</h3>
+                <p>
+                    <label>
+                        <input type="radio" id="aruba" name="location" value="Aruba" Checked >Aruba </label>
+                        <input type="radio" id="japan" name="location" value="Japan">Japan </label>
+                        <input type="radio" id="reykajavik" name="location" value="Reykajavik">Reykajavik </label>
+                        <input type="radio" id="newZealand" name="location" value="New Zealand">New Zealand </label>
+                </p>
+<p>
+    <label for="color">Select Your Favorite Color</label>
+    <input type="color" name="color" id="color">
+
+</p>
+<p>
+    <h3>Desired Amenities</h3>    
+        <input type="checkbox" id="sauna" name="extras" value="sauna">Sauna </label>
+        <input type="checkbox" id="fitness" name="extras" value="fitness">Fitness Center </label>
+        <input type="checkbox" id="internet" name="extras" value="internet" checked>Internet Access </label>
+        <input type="checkbox" id="golf" name="extras" value="golf">Golf Course </label>
+</p>
             </fieldset>
             
             <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the Contest!">
         </form>
     </main>
     <footer>
